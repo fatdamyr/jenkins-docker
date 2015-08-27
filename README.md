@@ -1,5 +1,5 @@
-# jenkins-swarm-slave
-Docker container for running a Jenkins swarm slave
+# jenkins-slave
+Docker container for running a Jenkins ssh slave
 
  Build Tools Supported by this slave
  * [Ant 1.9.6](http://ant.apache.org/)
@@ -10,7 +10,12 @@ Docker container for running a Jenkins swarm slave
 To build the docker images locally, run the following command:
 
 ```bash
- docker build -t lucksolutions/jenkins-swarm-slave .
+ cd jenkins-slave
+ ./build.sh
 ```
 
-docker run --rm=true -i -t lucksolutions/jenkins-swarm-slave bash
+## Running the Jenkins Master
+
+```bash
+./start.sh
+```

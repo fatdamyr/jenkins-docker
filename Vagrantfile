@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Port 8080 for the web UI
     # Port 5000 for slave communications
     # See https://registry.hub.docker.com/_/jenkins/
+    # docker run -d --name jenkins-master -p 8080:8080 -p 5000:5000 -v /jenkins:/var/jenkins_home jenkins
     
     d.pull_images "jenkins:latest"
     d.run "jenkins-master",
