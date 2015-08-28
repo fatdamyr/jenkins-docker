@@ -1,5 +1,5 @@
 #/bin/bash
 
 # Build the image
-docker rmi jenkins-slave
-docker build -t jenkins-slave .
+docker rmi lucksolutions/jenkins-slave
+docker build -t lucksolutions/jenkins-slave .
