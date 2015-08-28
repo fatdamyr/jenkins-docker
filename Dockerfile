@@ -6,6 +6,8 @@ FROM jenkins:latest
 # ----------
 MAINTAINER Jason Luck <jason.luck@lucksolutions.com>
 
+USER root
+
 # Software Versions
 ENV DOCKER_VERSION 1.6.0
 
@@ -13,7 +15,6 @@ ENV DOCKER_VERSION 1.6.0
 RUN apt-get update && \
 	apt-get install -y docker.io
 	
-# Install Subversion
 
 
 
